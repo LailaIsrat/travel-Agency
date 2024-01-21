@@ -108,6 +108,81 @@ section ,footer{
 
 /* ----------------popular tour style end----------- */
 
+/* ----------------Choose Your Destination style start----------- */
+
+.choose-destination-section .choose-destination-brief .section-title{
+    text-align: center;
+}
+.choose-destination-section .choose-destination-brief .section-short-brief{
+    margin: 12px auto;
+    text-align: center;
+    width: 700px;
+}
+.choose-destination-container-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    margin-top:48px;
+}
+.choose-destination-container-grid .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.choose-destination-container-grid .card .title{
+    color: #FFF;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+    position: relative;
+    top: 45%;
+}
+.choose-destination-container-grid .maldives {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    background-image: url('../assets/Rectangle 5.png');
+    height: 300px;
+}
+.choose-destination-container-grid .indonesia {
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+    background-image: url('../assets/Rectangle 8.png');
+    height: 300px;
+}
+.choose-destination-container-grid .srilanka{
+    grid-column:1 / span 4;
+    grid-row: 2 / span 1;
+    background-image: url('../assets/Rectangle 6.png');
+    height: 280px;
+}
+.choose-destination-container-grid .north-america{
+    grid-column: 5 / span 5;
+    grid-row: 2 / span 1;
+    background-image: url('../assets/Rectangle 7.png');
+    height: 280px;
+}
+.choose-destination-container-grid .kashmir{
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+    background-image: url('../assets/Rectangle 9.png');
+    height: 280px;
+}
+
+.choose-destination-container-grid .bangladesh{
+    grid-column: 1 / span 5;
+    grid-row: 3/ span 1;
+    background-image: url('../assets/Rectangle 11.png');
+    height: 300px;
+}
+.choose-destination-container-grid .bandarban{
+    grid-column: 6 / span 7;
+    grid-row: 3/ span 1;
+    background-image: url('../assets/Rectangle 10.png');
+    height: 300px;
+}
+/* ----------------Choose Your Destination style end----------- */
+
 /* ----------------why choode us style start----------- */
 
 .choose-us-section .choose-us-description .section-title{
@@ -118,42 +193,6 @@ section ,footer{
     text-align: center;
     width: 700px;
 }
-/* .choose-us-container{
-    display: flex;
-    justify-content: space-between;
-    margin-top:48px;
-
-} */
-/* .choose-us-container h3{
-    margin: 12px auto;
-    color: var(--primary-color);
-    font-size: 24px;
-    font-weight: 800;
-} */
-
-/* .choose-us-container .hotels{
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05);
-} */
-/* .choose-us-container .service{
-    border: 1px solid rgba(41, 206, 246, 0.20);
-    background: rgba(41, 206, 246, 0.05);
-} */
-
-
-/* .choose-us-container .choose-us-card p{
-    margin: 0;
-    text-align: start!important;
-    width: 100%;
-} */
-/* .choose-us-container .choose-us-card{
-    border-radius: 16px;
-    padding: 32px;
-    width: 49%;
-
-} */
-/* **************************** */
-/* ****************************** */
 .choose-us-container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
