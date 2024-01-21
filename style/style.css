@@ -47,11 +47,13 @@ section ,footer{
     color: var(--primary-color);
     font-size: 40px;
     font-weight: 800;
+    
 }
-.logo-container{
+.logo-container a{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 .logo-container img{
     width: 40px;
@@ -65,7 +67,35 @@ section ,footer{
 .logo-container .logo-title{
     color: var(--contrast-color);
 }
-
+/* ----------------header style start-------------- */
+.header-section{
+    padding-top:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .header-section .menu-container li{
+    display: flex;
+} */
+.header-section .menu-container a{
+    text-decoration: none;
+    padding-right: 40px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 40px;
+}
+.header-section .menu-container a:last-child {
+    padding-right: 0!important; /* No margin on the last anchor tag */
+}
+.header-section .menu-container a:hover{
+    color: var(--contrast-color);
+}
+.header-section .menu-container a:active{
+    color: var(--contrast-color);
+}
+/* ----------------header style end-------------- */
 
 /* ----------------popular tour style start----------- */
 .popular-tour{
@@ -81,11 +111,6 @@ section ,footer{
 .popular-tour .popular-tour-description{
     padding-right: 5%;
 }
-/* .popular-tour .popular-tour-description .section-title{
-    color: var(--primary-color);
-    font-size: 40px;
-    font-weight: 800;
-} */
 .popular-tour .popular-tour-description p,
 .popular-tour .popular-tour-description ul{
     margin-top: 12px;
