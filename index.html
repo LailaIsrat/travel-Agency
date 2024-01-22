@@ -36,6 +36,36 @@
 
     </header>
     <main>
+        <!-- hero -->
+        <section class="container hero-section">
+            <div class="hero-content-container">
+                <h1>Explore Your Travel</h1>
+                <div class="hero-description-container">
+                    <p class="hero-description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+                </div>
+                <div class="hero-form-container">
+                    <form action=""class="hero-form-container-form">
+                        <input type="text" placeholder="Where go">
+                        <select name="months" id="months">
+                            <option value="month" class="disable">when</option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                        </select>
+
+                        <select name="types" id="types">
+                            <option value="type" class="disable">Select Type</option>
+                            <option value="january">Solo</option>
+                            <option value="february">Group</option>
+                        </select>
+                        <button style="display:inline-flex" type="submit"><p><img src="./assets/search.svg" alt=""></p> Find Now</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
         <!-- Our Popular Tours -->
         <section class="container popular-tour">
             <div class="popular-tour-description">
@@ -209,23 +239,63 @@
         </section>
         <!-- A Simple Perfect Place To Get Lost -->
         <section class="container popular-tour">
-            <div class="popular-tour-description">
+            <div class="perfect-place-description popular-tour-description">
                 <h2 class="section-title">A Simple Perfect Place <br>To Get Lost</h2>
-                <p>Embark on unforgettable journeys with our popular tours, designed to bring you joy through exploration, cultural immersion, and thrilling adventures.</p>
+                <p>Embark on joyful journeys with our popular tours, blending exploration, culture, and adventure.</p>
             
 
-                <ul style="font-weight:700;">
-                    <li>Explore diverse landscapes and cultures on our tours, each offering a unique experience through vibrant markets, serene spots, and more.</li>
+                <ul style="font-weight:700;margin-top:0;">
+                    <li>
+                        Explore diverse landscapes and cultures on our tours, discovering vibrant markets, serene spots, and more.</li>
                     <li>Discover cultures through our tours - taste local delights, connect with communities, and admire diverse traditions.</li>
                 </ul>
 
                 <button type="submit">Read More</button>
 
             </div>
-            <div class="popular-tour-img">
-                <img src="assets/Rectangle 4.png" alt="">
+            <div class="popular-tour-img perfect-place-description">
+                <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/MdQXb64Wmtk?si=G_HrkhKZ6CnZPPNf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <video height="350" controls>
+                    <source src="./assets/mountain.mp4" type="video/mp4">
+                  </video>
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section class="container newsletter-section">
+            <div class="newsletter-form-container popular-tour-description">
+                <h2 class="section-title">Newsletter</h2>
+                <div class="newsletter-description">
+                    <p>Get your daily dose of travel news & tips. Sign up today!</p>
+                </div>
+                <div class="newsletter-form">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="button" value="Subscribe">
+                    </form>
+                </div>
+            
 
             </div>
+            <div class="popular-tour-img newsletter-img-container">
+                <img src="./assets/Rectangle 8 (1).png" alt="">
+                <div class="save-container">
+                    <h3 class="travel-name">Travel.com</h3>
+                    <h1 class="save-percentage">Save up to 70%</h1>
+                </div>
+
+            </div>
+        </section>
+        <!-- blog -->
+        <section class="container blog-section">
+            <div class="choose-us-description">
+                <h2 class="section-title">Deals & Discounts</h2>
+                <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <div class="blog-container">
+                    
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>

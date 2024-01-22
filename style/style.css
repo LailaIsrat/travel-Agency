@@ -3,6 +3,7 @@
  :root {
     --primary-color: #131318;
     --secondary-color:  rgba(19, 19, 24, 0.70);
+    --white:#FFF;
     --font-family: 'Mulish', sans-serif;
     --contrast-color:#FF5400;
     --button-border-radius: 8px;
@@ -28,7 +29,7 @@ button{
     background-color: var(--contrast-color);
     border: none;
     outline: none;
-    color: #FFF;
+    color:var(--white);
     text-align: center;
     font-size: 15px;
     font-weight: 800;
@@ -45,7 +46,7 @@ button:hover{
     margin: auto;
 }
 section ,footer{
-    margin-top: 50px!important;
+    margin-top: 100px!important;
 }
 .section-title{
     color: var(--primary-color);
@@ -78,9 +79,6 @@ section ,footer{
     justify-content: space-between;
     align-items: center;
 }
-/* .header-section .menu-container li{
-    display: flex;
-} */
 .header-section .menu-container a{
     text-decoration: none;
     padding-right: 40px;
@@ -91,7 +89,7 @@ section ,footer{
     padding-right: 40px;
 }
 .header-section .menu-container a:last-child {
-    padding-right: 0!important; /* No margin on the last anchor tag */
+    padding-right: 0!important;
 }
 .header-section .menu-container a:hover{
     color: var(--contrast-color);
@@ -100,7 +98,91 @@ section ,footer{
     color: var(--contrast-color);
 }
 /* ----------------header style end-------------- */
+/* ---------------hero style start---------------- */
+.hero-section{
+    background-image: url(../assets/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 16px;
+    
+}
+.hero-section .hero-content-container{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+    padding: 100px;
+}
+.hero-section .hero-content-container h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 55px;
+    font-weight: 800;
+}
+.hero-section .hero-form-container{
+    width: 82%;
+    margin: auto;
+    margin-top: 30px;
+}
+.hero-section .hero-content-container .hero-description-container{
+    margin: auto;
+    width:66%;
+    margin-top: 18px;
+}
+.hero-section .hero-content-container .hero-description{
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+.hero-section .hero-form-container-form{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    gap: 24px;
+}
+.hero-section .hero-form-container-form input ,
+.hero-section .hero-form-container-form select{
+    border-radius: 8px;
+    background: var(--white);
+    padding: 16px 20px 16px 16px;
+    border: none;
+    outline: none;
+    color: var(--secondary-color);
+    width:180px;
+}
+.disable{
+    cursor: none;
+}
+.hero-section .hero-form-container-form option{
+    border: none;
+    outline: none;
+    border-radius: 8px!important;
+}
+.hero-section .hero-form-container-form button{
+    border-radius:8px;
+    background-color: var(--contrast-color);
+    border: none;
+    outline: none;
+    color:var(--white);
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 4px 27px;
+    transition: background-color 0.8s;
 
+}
+.hero-section .hero-form-container-form button p img{
+    top: 4px;
+    position: relative;
+    padding-right: 5px;
+}
+/* ----------------hero style end -------------- */
 /* ----------------popular tour style start----------- */
 .popular-tour{
     display: flex;
@@ -132,7 +214,7 @@ section ,footer{
 .popular-tour .popular-tour-img img{
     border: var(--img-border-radius);
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 /* ----------------popular tour style end----------- */
@@ -160,7 +242,7 @@ section ,footer{
     border-radius: 16px;
 }
 .choose-destination-container-grid .card .title{
-    color: #FFF;
+    color:var(--white);
     text-align: center;
     font-size: 23px;
     font-weight: 800;
@@ -296,9 +378,8 @@ section ,footer{
 .deals-discount-section .deals-discount-container .tour-to-satorini-grid .tour-to-satorini-content-container{
     grid-column: 7 / span 6;
     grid-row: 1/ span 1;
-    /* height: 340px; */
     border-radius: 16px;
-    border: 2px solid #FFF;
+    border: 2px solid var(--white);
     background-color: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(0.5px);
     padding: 50px;
@@ -345,9 +426,8 @@ section ,footer{
 .deals-discount-section .deals-discount-container .tour-to-satorini-second-grid .tour-to-satorini-second-content-container{
     grid-column: 1 / span 6;
     grid-row: 1/ span 1;
-    /* height: 340px; */
     border-radius: 16px;
-    border: 2px solid #FFF;
+    border: 2px solid var(--white);
     background-color: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(0.5px);
     padding: 50px;
@@ -356,8 +436,114 @@ section ,footer{
     text-align: center;
 }
 /* ----------------Deals and discount style end----------- */
+/* ----------------simple perfect place style start---------------- */
+.perfect-place-description{
+    width: 50%!important;
+}
+.perfect-place-description video{
+    border-radius: 16px;
+    width: 100%;
+}
 
+/* ----------------simple perfect place style end---------------- */
+/* --------------Newsletter style start-------------- */
+.newsletter-section{
+    display: flex;
+    gap: 24px;
+    margin-top: 100px!important;
+    margin-bottom:100px;
+}
+.newsletter-section .newsletter-form-container{
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid var(--contrast-color);
+    padding: 30px;
+}
+.newsletter-section .newsletter-form-container h2{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 800;
+}
+.newsletter-section .newsletter-form-container .newsletter-description{
+    width: 90%;
+    margin-top: 10px;
+}
+.newsletter-section .popular-tour-img{
+    width: 60%;
+    position: relative;
+}
+.newsletter-section .popular-tour-img .save-container{
+    position: absolute;
+    text-align: center;
+    border-radius: 16px;
+    background: var(--contrast-color);
+    padding: 20px;
+    right: 3px;
+    transform: rotate(-29.628deg);
+    bottom: 65px;
+}
+.newsletter-section .popular-tour-img .save-container .travel-name{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+}
 
+.newsletter-section .popular-tour-img .save-container .save-percentage{
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.newsletter-section .popular-tour-img img{
+    width: 100%;
+}
+.newsletter-section .newsletter-form{
+    border-top: 1px solid rgba(19, 19, 24, 0.10);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.newsletter-section .newsletter-form input{
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 20px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.newsletter-section .newsletter-form input[type="button"]{
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background-color: var(--contrast-color);
+    transition: background-color 0.8s;
+
+}
+.newsletter-section .newsletter-form input[type="button"]:hover{
+    background-color: var(--secondary-color);
+
+}
+/* ------------------Newsletter style end------------ */
+
+/* ----------------Blog style start----------- */
+.blog-section .choose-us-description .section-title{
+    text-align: center;
+}
+.blog-section .choose-us-description p{
+    margin: 12px auto;
+    text-align: center;
+    width: 700px;
+}
+.blog-section .blog-container{
+    display: flex;
+    gap: 24px;
+}
+
+/* ----------------Blog style end----------- */
 /* ----------------footer style start----------- */
 
 footer{
