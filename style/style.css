@@ -25,15 +25,19 @@ p,ul{
 }
 button{
     border-radius: var(--button-border-radius);
-    background: var(--contrast-color);
+    background-color: var(--contrast-color);
     border: none;
     outline: none;
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
-    padding: 13px 30px;
+    padding: 12px 27px;
+    transition: background-color 0.8s;
 
+}
+button:hover{
+    background-color: var(--secondary-color);
 }
 .container{
     width: 83%;
@@ -263,6 +267,95 @@ section ,footer{
     background: rgba(233, 68, 68, 0.05);
 }
 /* ----------------why choode u style end----------- */
+
+/* ----------------Deals and discount style start----------- */
+
+.deals-discount-section .choose-us-description .section-title{
+    text-align: center;
+}
+.deals-discount-section .choose-us-description p{
+    margin: 12px auto;
+    text-align: center;
+    width: 700px;
+}
+.deals-discount-container{
+    margin-top:48px;
+}
+.deals-discount-section .deals-discount-container .tour-to-satorini-grid{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 50px;
+    background-image: url(../assets/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    /* height: 435px; */
+    margin-bottom: 24px;
+}
+.deals-discount-section .deals-discount-container .tour-to-satorini-grid .tour-to-satorini-content-container{
+    grid-column: 7 / span 6;
+    grid-row: 1/ span 1;
+    /* height: 340px; */
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(0.5px);
+    padding: 50px;
+
+}
+.deals-discount-section .tour-to-satorini-description h3{
+    margin: 0 auto 12px;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 800;
+}
+.deals-discount-section .tour-to-satorini-description p{
+    margin: 0;
+    text-align: start!important;
+    width: 100%;
+}
+.deals-discount-section .tour-to-satorini-description .price{
+    color: var(--contrast-color);
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px 0 10px 0;
+}
+.tour-to-satorini-list-content {
+    display: flex;
+}
+.tour-to-satorini-list-content p{
+    text-align: start!important;
+}
+.tour-to-satorini-list-content p >.fas{
+    color: var(--contrast-color);
+}
+.deals-discount-section .deals-discount-container .tour-to-satorini-second-grid{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 50px;
+    background-image: url(../assets/Group\ 40.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    /* height: 435px; */
+    margin-bottom: 24px;
+}
+.deals-discount-section .deals-discount-container .tour-to-satorini-second-grid .tour-to-satorini-second-content-container{
+    grid-column: 1 / span 6;
+    grid-row: 1/ span 1;
+    /* height: 340px; */
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(0.5px);
+    padding: 50px;
+}
+.deals-discount-button-container{
+    text-align: center;
+}
+/* ----------------Deals and discount style end----------- */
 
 
 /* ----------------footer style start----------- */
