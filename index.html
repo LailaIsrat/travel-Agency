@@ -18,20 +18,15 @@
                 <p> Solo <span class="logo-title">Travel</span></p>
             </a>
         </div>
-        <div class="menu-container">
-            <!-- <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="">Packages</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul> -->
+        <div class="menu-for-desktop menu-container">
             <a href="/index.html">Home</a>
-            <a href="#">Packages</a>
+            <a href="#package">Packages</a>
             <a href="#">Testimonial</a>
-            <a href="#">Blog</a>
+            <a href="#blog">Blog</a>
             <a href="#">Contact</a>
-
+        </div>
+        <div class="menu-for-mobile">
+            <img src="./assets/menu-bar.svg" alt="">
         </div>
 
     </header>
@@ -41,8 +36,9 @@
             <div class="hero-content-container">
                 <h1>Explore Your Travel</h1>
                 <div class="hero-description-container">
-                    <p class="hero-description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+                    <p class="hero-description">Explore Your Travel is likely a platform or initiative encouraging individuals to discover and make the most of their travel experiences.</p>
                 </div>
+
                 <div class="hero-form-container">
                     <form action=""class="hero-form-container-form">
                         <input type="text" placeholder="Where go">
@@ -58,7 +54,10 @@
                             <option value="january">Solo</option>
                             <option value="february">Group</option>
                         </select>
-                        <button style="display:inline-flex" type="submit"><p><img src="./assets/search.svg" alt=""></p> Find Now</button>
+                        <div>
+
+                            <a href="#"><p><img src="./assets/search.svg" alt=""></p> Find Now</a>
+                        </div>
 
                     </form>
                 </div>
@@ -93,7 +92,7 @@
         <section class="container choose-destination-section">
             <div class="choose-destination-brief">
                 <h2 class="section-title">Choose Your Destination</h2>
-                <p class="section-short-brief">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <p class="section-short-brief">Discover amazing places and cultures with this travel blog's top destination picks for your next adventure</p>
 
                 <div class="choose-destination-container-grid">
                     <div class="maldives card">
@@ -135,25 +134,25 @@
         <section class="container choose-us-section">
             <div class="choose-us-description">
                 <h2 class="section-title">Why Choose Us</h2>
-                <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <p>Choose us for your travel needs because we provide a hassle-free and personalized experience, making your summer adventures unforgettable</p>
 
                 <div class="choose-us-container-grid">
                     <div class="hotels choose-us-card">
                         <img src="assets/hotel.svg" alt="">
                         <h3>Handpicked Hotels</h3>
-                        <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                        <p>We offers a meticulously curated collection of hotels, guaranteeing travelers a premium and carefully selected lodging experience.</p>
 
                     </div>
                     <div class="service choose-us-card">
                         <img src="assets/service.svg" alt="">
                         <h3>World Class Service</h3>
-                        <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                        <p>We promises an unparalleled level of world-class service for an exceptional and memorable travel experience.</p>
 
                     </div>
                     <div class="guarentee choose-us-card">
                         <img src="assets/guarentee.svg" alt="">
                         <h3>World Class Service</h3>
-                        <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                        <p>We are committed to delivering world-class service, ensuring an exceptional and memorable experience for its users.</p>
 
                     </div>
 
@@ -163,23 +162,35 @@
             </div>
         </section>
         <!-- Deals & discounts -->
-        <section class="container deals-discount-section">
+        <section class="container deals-discount-section" id="package">
             <div class="choose-us-description">
                 <h2 class="section-title">Deals & Discounts</h2>
-                <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <p>Explore exclusive deals and discounts on this travel website to make your summer vacation budget-friendly and unforgettable</p>
 
                 <div class="deals-discount-container">
                     <div class="tour-to-satorini-grid">
                         <div class="tour-to-satorini-content-container">
-                            <div class="tour-to-satorini-list-content">
-                                <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
-                                <p><i class="fas fa-paw"></i> Max : 10</p>
-                                <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+                            <div class="list-for-desktop">
 
+                                <div class="tour-to-satorini-list-content">
+                                    <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+    
+                                </div>
+                            </div>
+                            <div class="list-for-mobile">
+                                <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
+                                <div class="tour-to-satorini-list-content">
+                                    
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -32%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+    
+                                </div>
                             </div>
                             <div class="tour-to-satorini-description">
                                 <h3>Tour To Satorini</h3>
-                                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                                <p>Explore the enchanting beauty of Santorini through our travel website, offering a captivating virtual tour showcasing its picturesque landscapes, charming villages, and stunning sunsets</p>
 
                                 <p class="price">Price: $1300-$1500</p>
                                 <button type="submit">Book Now</button>
@@ -191,15 +202,25 @@
                     <div class="tour-to-satorini-second-grid">
 
                         <div class="tour-to-satorini-second-content-container">
-                            <div class="tour-to-satorini-list-content">
+                            <div class="list-for-desktop">
+                                <div class="tour-to-satorini-list-content">
+                                    <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="list-for-mobile">
                                 <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
-                                <p><i class="fas fa-paw"></i> Max : 10</p>
-                                <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
-
+                                <div class="tour-to-satorini-list-content">
+                                    
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -32%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+    
+                                </div>
                             </div>
                             <div class="tour-to-satorini-description">
                                 <h3>Tour To Satorini</h3>
-                                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                                <p>Explore the enchanting beauty of Santorini through our travel website, offering a captivating virtual tour showcasing its picturesque landscapes, charming villages, and stunning sunsets</p>
 
                                 <p class="price">Price: $1300-$1500</p>
                                 <button type="submit">Book Now</button>
@@ -212,15 +233,25 @@
 
                     <div class="tour-to-satorini-grid">
                         <div class="tour-to-satorini-content-container">
-                            <div class="tour-to-satorini-list-content">
+                            <div class="list-for-desktop">
+                                <div class="tour-to-satorini-list-content">
+                                    <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="list-for-mobile">
                                 <p><i class="fas fa-clock"></i> 7 Day / 6 Night</p>
-                                <p><i class="fas fa-paw"></i> Max : 10</p>
-                                <p style="margin-left: -10%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
-
+                                <div class="tour-to-satorini-list-content">
+                                    
+                                    <p><i class="fas fa-paw"></i> Max : 10</p>
+                                    <p style="margin-left: -32%!important;"><i class="fas fa-map-marker-alt"></i> Malaysia</p>
+    
+                                </div>
                             </div>
                             <div class="tour-to-satorini-description">
                                 <h3>Tour To Satorini</h3>
-                                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
+                                <p>Explore the enchanting beauty of Santorini through our travel website, offering a captivating virtual tour showcasing its picturesque landscapes, charming villages, and stunning sunsets</p>
 
                                 <p class="price">Price: $1300-$1500</p>
                                 <button type="submit">Book Now</button>
@@ -255,7 +286,7 @@
             </div>
             <div class="popular-tour-img perfect-place-description">
                 <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/MdQXb64Wmtk?si=G_HrkhKZ6CnZPPNf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                <video height="350" controls>
+                <video  controls>
                     <source src="./assets/mountain.mp4" type="video/mp4">
                   </video>
             </div>
@@ -277,7 +308,7 @@
             
 
             </div>
-            <div class="popular-tour-img newsletter-img-container">
+            <div class="newsletter-img newsletter-img-container">
                 <img src="./assets/Rectangle 8 (1).png" alt="">
                 <div class="save-container">
                     <h3 class="travel-name">Travel.com</h3>
@@ -287,7 +318,7 @@
             </div>
         </section>
         <!-- blog -->
-        <section class="container blog-section">
+        <section class="container blog-section" id="blog">
             <div class="choose-us-description">
                 <h2 class="section-title">Articles & Tips</h2>
                 <p>Explore some of the best tips from around the world</p>
@@ -347,7 +378,7 @@
                     <p> Solo <span class="logo-title">Travel</span></p>
                 </a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam.</p>
+            <p>We provides comprehensive information, booking options, and recommendations for diverse summer destinations, catering to the needs and preferences of travelers seeking memorable experiences during the warmer months.</p>
             <div class="media-container">
                 <a href="#">
                     <i class="fab fa-twitter"></i>
